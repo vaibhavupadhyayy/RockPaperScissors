@@ -1,0 +1,91 @@
+body{
+  background-color: ghostwhite;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  background-color: #081b31;
+  color: #fff;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.choice {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: #081b31;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column; /* Adjust for smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Reduce the gap for smaller screens */
+  margin-top: 2rem; /* Reduce margin for smaller screens */
+}
+
+.score-board {
+  display: flex;
+  flex-direction: column; /* Adjust for smaller screens */
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 2rem; /* Reduce margin for smaller screens */
+  gap: 1rem; /* Reduce the gap for smaller screens */
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+.msg-container {
+  margin-top: 2rem; /* Reduce margin for smaller screens */
+}
+
+#msg {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 1.5rem; /* Adjust font size for smaller screens */
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+/* Media Queries for Tablet */
+@media (min-width: 600px) {
+  .choices {
+    flex-direction: row; /* Change back to row layout for larger screens */
+  }
+
+  .score-board {
+    flex-direction: row; /* Change back to row layout for larger screens */
+  }
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 992px) {
+  .choices, .score-board, .msg-container {
+    margin-top: 5rem; /* Reset margin for larger screens */
+  }
+}
